@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-box {
+      background-color: white;
+      padding: 30px 25px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      text-align: center;
+    }
+    .form-box h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-box input[type="text"],
+    .form-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .form-box input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #ff7e5f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .form-box input[type="submit"]:hover {
+      background-color: #eb5757;
+    }
+
+    </style>
+    <script>
+    function validate(form) {
+        var name = form.pass1.value;
+        var password = form.pass2.value;
+        if (name == "Aman" && password == "aman123") {
+          localStorage.setItem("username", name);
+          alert("Success");
+          return true;
+        }
+        else {
+            alert("Error Password or Username")
+            return false;
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="form-box">
+    <form name="form" action="index1.html">
+        <h1>E-Commerce Login</h1>
+        Username: <input type="text" placeholder="Enter Username" name="pass1"><br><br>
+        Password: <input type="password" placeholder="Enter Password" name="pass2"><br><br>
+        <input type="submit" onclick="return validate(this.form)">
+    </div>
+    </form>
+ 
+    <script src="script.js"></script>
+
+</body>
+</html>

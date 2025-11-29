@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .product-card h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .product-card p {
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+    }
+    .buy-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .buy-btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>⌚ Watchs</h1>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="C:\Users\AMAN\Desktop\HTML codes\Html\e commerce project\role.jpg" alt="Rolex Submariner">
+      <h3>Rolex Submariner</h3>
+      <p>$8,50,000</p>
+      <button onclick="addToCart('Rolex Submariner', 850000)">Add to cart</button>  
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\AMAN\Desktop\HTML codes\Html\e commerce project\speed.jpg" alt="Omega Speedmaster">
+      <h3>Omega Speedmaster</h3>
+      <p>$5,20,000</p>
+        <button onclick="addToCart('Omega Speedmaster', 520000)">Add to cart</button>
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\AMAN\Desktop\HTML codes\Html\e commerce project\tag.jpg" alt="Tag Heuer Carrera">
+      <h3>Tag Heuer Carrera</h3>
+      <p>$3,40,000</p>
+      <button onclick="addToCart('Tag Heuer Carrera', 340000)">Add to cart</button>
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\AMAN\Desktop\HTML codes\Html\e commerce project\casio.jpg" alt="Casio G-Shock">
+      <h3>Casio G-Shock</h3>
+      <p>$12,999</p>
+      <button onclick="addToCart('Casio G-Shock', 12999)">Add to cart</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

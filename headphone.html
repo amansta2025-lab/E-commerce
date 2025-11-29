@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headphone Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .product-card h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .product-card p {
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+    }
+    .buy-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .buy-btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎧 Headphone Store</h1>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="C:\Users\AMAN\Desktop\HTML codes\Html\e commerce project\sony.jpg" alt="Sony WH-1000XM5">
+      <h3>Sony WH-1000XM5</h3>
+      <p>$29,990</p>
+      <button onclick="addToCart('Sony WH-1000XM5', 29990)">Add to cart</button>
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\AMAN\Desktop\HTML codes\Html\e commerce project\bose1.jpg" alt="Bose QuietComfort 45">
+      <h3>Bose QuietComfort 45</h3>
+      <p>$28,500</p>
+      <button onclick="addToCart('Bose QuietComfort 45', 28500)">Add to cart</button>
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\AMAN\Desktop\HTML codes\Html\e commerce project\apple.jpg" alt="Apple AirPods Max">
+      <h3>Apple AirPods Max</h3>
+      <p>$59,900</p>
+      <button onclick="addToCart('Apple AirPods Max', 59900)">Add to cart</button>
+    </div>
+    <div class="product-card">
+      <img src="C:\Users\AMAN\Desktop\HTML codes\Html\e commerce project\jbl.jpg" alt="JBL Live 660NC">
+      <h3>JBL Live 660NC</h3>
+      <p>$14,999</p>
+      <button onclick="addToCart('JBL Live 660NC', 14999)">Add to cart</button>
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

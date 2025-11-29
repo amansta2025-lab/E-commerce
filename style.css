@@ -1,0 +1,75 @@
+body{
+    border:0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(246, 246, 135);
+}
+header{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 15px;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+.main{
+    padding: 100px;
+    background-color: rgb(240, 174, 52);
+    color:white;
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    background-color:white;
+    color: rgb(240, 174, 52);
+    padding: 10px ;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.product-card button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #e52e71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
